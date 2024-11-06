@@ -5,8 +5,8 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Installation](#installation)
-4. [HTML_usage](#html)
-5. [CSS_usage](#css)
+4. [HTML_usage](#html_usage)
+5. [CSS_usage](#css_usage)
 
 
 ## Introduction
@@ -97,6 +97,62 @@ This table outlines the CSS properties and their usage within the profile card c
 - **Body**: The body is styled with a dark background, centered content, and light text.
 - **Card Layout**: The profile card features a centered layout with a circular image, heading, subtitle, and social media icons.
 - **Icons**: Social media icons are styled with specific colors and change on hover for interaction.
+
+
+# CSS Properties Differentiation: Width and Height
+
+This document explains the differences between common CSS properties related to width and height, including `width`, `min-width`, `max-width`, `height`, `min-height`, and `max-height`. It provides a beginner-friendly explanation along with a differentiation table.
+
+## CSS Properties Differentiation Table (Width and Height-related)
+
+| **Property**        | **Description**                                                                 | **Example Usage**                                    | **Behavior/Impact**                                             | **Symmetric or Asymmetric** |
+|---------------------|---------------------------------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------------------|-----------------------------|
+| **`width`**          | Defines the exact width of an element.                                           | `width: 200px;` or `width: 50%;`                     | Sets a fixed or percentage width for an element.                | Asymmetric (based on value)  |
+| **`min-width`**      | Defines the minimum width an element can have.                                   | `min-width: 150px;`                                  | Ensures the element is at least this width, but can grow larger if needed. | Asymmetric (minimum limit)   |
+| **`max-width`**      | Defines the maximum width an element can have.                                   | `max-width: 500px;`                                  | Ensures the element doesn't grow beyond this width, but can shrink smaller if needed. | Asymmetric (maximum limit)   |
+| **`height`**         | Defines the exact height of an element.                                          | `height: 300px;` or `height: 60%;`                   | Sets a fixed or percentage height for an element.               | Asymmetric (based on value)  |
+| **`min-height`**     | Defines the minimum height an element can have.                                  | `min-height: 100px;`                                 | Ensures the element is at least this height, but can grow larger if needed. | Asymmetric (minimum limit)   |
+| **`max-height`**     | Defines the maximum height an element can have.                                  | `max-height: 400px;`                                 | Ensures the element doesn't grow taller than this height, but can shrink smaller if needed. | Asymmetric (maximum limit)   |
+
+## Brief Explanation for Beginners
+
+### **`width`**:
+- This is the width of an element. You can set it in pixels, percentages, or other units.
+- If you set `width: 200px;`, the element will always be 200 pixels wide.
+
+### **`min-width`**:
+- This defines the minimum width the element can shrink to. If content inside grows, the element can expand beyond this value.
+- If you set `min-width: 150px;`, the element cannot be smaller than 150 pixels, but it can grow if the content requires it.
+
+### **`max-width`**:
+- This defines the maximum width the element can have. It can shrink if the content inside the element is smaller.
+- If you set `max-width: 500px;`, the element will never exceed 500px in width, but can shrink if needed.
+
+### **`height`**:
+- This is the fixed height of an element. You can set it in pixels, percentages, or other units.
+- If you set `height: 300px;`, the element will always be 300 pixels tall.
+
+### **`min-height`**:
+- This defines the minimum height an element can have. The element can grow taller than this value if necessary.
+- If you set `min-height: 100px;`, the element cannot be shorter than 100px, but it can grow taller if the content is larger.
+
+### **`max-height`**:
+- This defines the maximum height the element can have. It can shrink if the content inside is smaller.
+- If you set `max-height: 400px;`, the element will not grow taller than 400px but can shrink if the content allows it.
+
+## Key Differences
+
+### **`width` vs `min-width` vs `max-width`**:
+- **`width`** is the exact width you set.
+- **`min-width`** ensures the element doesn’t get smaller than the set value but can grow if needed.
+- **`max-width`** ensures the element doesn’t grow beyond the set value but can shrink if needed.
+
+### **`height` vs `min-height` vs `max-height`**:
+- **`height`** is the exact height you set.
+- **`min-height`** ensures the element doesn’t get shorter than the set value but can grow if necessary.
+- **`max-height`** ensures the element doesn’t grow taller than the set value but can shrink if needed.
+
+This table and explanation should help you understand how these properties work in CSS to control the size of elements on a webpage.
 
 
 
