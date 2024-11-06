@@ -1,11 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      /* styles  */
+      body {
+        background-color: #212121;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: aliceblue;
+      }
+      .card {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 250px;
+        max-width: 310px;
+        width: 100%;
+        background-color: #fff;
+        color: #212121;
+        text-align: center;
+        box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.15);
+      }
+      .card * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      .card .prof-image {
+        padding: 15% 10% 0;
+      }
+
+      .card .prof-image img {
+        max-width: 100%;
+        vertical-align: top;
+        position: relative;
+        border-radius: 50%;
+        max-width: 40%;
+      }
+      .card figcaption {
+        padding: 5% 10% 15%;
+      }
+      .card h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 3px 0;
+      }
+      .card h5 {
+        font-weight: 400;
+        margin: 0;
+        text-transform: uppercase;
+        color: #888;
+        letter-spacing: 1;
+      }
+      .icons a {
+        margin: 0 10px;
+        font-size: 30px;
+        text-decoration: none;
+      }
+
+      .icons a .fa-facebook {
+        color: #1877f2;
+      }
+
+      .icons a .fa-twitter {
+        color: #1da1f2;
+      }
+
+      .icons a .fa-youtube {
+        color: #ff0000;
+      }
+      .icons a:hover .fa-facebook {
+        color: #155e8e; 
+      }
+
+      .icons a:hover .fa-twitter {
+        color: #0d8ddf;
+      }
+
+      .icons a:hover .fa-youtube {
+        color: #cc0000;
+      }
+
+      .card .icons i a {
+        text-decoration: none;
+      }
+    </style>
+    <title>Responsive Cards</title>
+  </head>
+  <body>
+    <figure class="card">
+      <div class="prof-image">
+        <img
+          src="https://www.shutterstock.com/image-photo/happy-cheerful-45-year-old-600nw-2353012797.jpg"
+          alt="Riya_Pic"
+        />
+      </div>
+      <figcaption>
+        <h3>Riya</h3>
+        <h5>Founder</h5>
+        <p>
+          The founder is a visionary leader dedicated to innovation and
+          excellence, building a trusted foundation for the company's success.
+        </p>
+      </figcaption>
+      <div class="icons">
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </figure>
+
+    <figure class="card">
+      <div class="prof-image">
+        <img
+          src="https://www.shutterstock.com/image-photo/happy-mature-male-business-leader-600nw-2118840614.jpg"
+          alt="Riya_Pic"
+        />
+      </div>
+      <figcaption>
+        <h3>Richard</h3>
+        <h5>CEO</h5>
+        <p>
+          The CEO is a dynamic leader with a strategic vision, driving the
+          company towards growth and success.Their focus on innovation,
+          leadership.
+        </p>
+      </figcaption>
+      <div class="icons">
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </figure>
+
+    <figure class="card">
+      <div class="prof-image">
+        <img
+          src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/50dab922-5d48-4c6b-8725-7fd0755d9334/3a3f2d35-8167-4708-9ef0-bdaa980989f9.png"
+          alt="Riya_Pic"
+        />
+      </div>
+      <figcaption>
+        <h3>Sandeep Vanga</h3>
+        <h5>HR Manager</h5>
+        <p>The HR Manager is dedicated to fostering a positive work culture</p>
+      </figcaption>
+      <div class="icons">
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </figure>
+  </body>
 </html>
