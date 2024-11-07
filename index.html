@@ -24,7 +24,10 @@
       }
       .card {
         position: relative;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         overflow: hidden;
         margin: 10px;
         min-width: 250px;
@@ -34,21 +37,24 @@
         color: #212121;
         text-align: center;
         box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.15);
+        padding: 10px;
       }
       .card * {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
       }
       .card .prof-image {
-        padding: 15% 10% 0;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
       }
 
       .card .prof-image img {
-        max-width: 100%;
-        vertical-align: top;
-        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
         border-radius: 50%;
-        max-width: 40%;
       }
       .card figcaption {
         padding: 5% 10% 15%;
@@ -106,16 +112,15 @@
     <figure class="card">
       <div class="prof-image">
         <img
-          src="https://www.shutterstock.com/image-photo/happy-cheerful-45-year-old-600nw-2353012797.jpg"
-          alt="Riya_Pic"
+          src="https://www.philips.com/c-dam/corporate/en_AA/about/about-us/executive-profile/roy-jakobs/roy-jakobs-ceo-thumbnail.jpg"
+          alt="f_Pic"
         />
       </div>
       <figcaption>
         <h3>Riya</h3>
         <h5>Founder</h5>
         <p>
-          The founder is a visionary leader dedicated to innovation and
-          excellence, building a trusted foundation for the company's success.
+          The founder is a visionary leader dedicated to excellence.
         </p>
       </figcaption>
       <div class="icons">
@@ -128,17 +133,15 @@
     <figure class="card">
       <div class="prof-image">
         <img
-          src="https://www.shutterstock.com/image-photo/happy-mature-male-business-leader-600nw-2118840614.jpg"
-          alt="Riya_Pic"
+          src="https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-2-1.jpg"
+          alt="ceo_Pic"
         />
       </div>
       <figcaption>
         <h3>Richard</h3>
         <h5>CEO</h5>
         <p>
-          The CEO is a dynamic leader with a strategic vision, driving the
-          company towards growth and success.Their focus on innovation,
-          leadership.
+          The CEO is a dynamic leader with a strategic vision.
         </p>
       </figcaption>
       <div class="icons">
@@ -151,8 +154,8 @@
     <figure class="card">
       <div class="prof-image">
         <img
-          src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/50dab922-5d48-4c6b-8725-7fd0755d9334/3a3f2d35-8167-4708-9ef0-bdaa980989f9.png"
-          alt="Riya_Pic"
+          src="https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg"
+          alt="hr_Pic"
         />
       </div>
       <figcaption>
